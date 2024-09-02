@@ -1,4 +1,4 @@
-.experiência {
+.sobre-mim {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
@@ -6,17 +6,17 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
 }
-.experiência .subtitulo {
+.sobre-mim .subtitulo {
   color: #e0e0e0;
 }
-.experiência-texto {
+.sobre-mim-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
   margin-bottom: 60px;
   color: #525252;
 }
-.experiência-texto strong {
+.sobre-mim-texto strong {
   color: #141414;
 }
 
@@ -75,13 +75,13 @@
 }
 
 @media (max-width: 800px) {
-  .experiência {
+  .sobre-mim {
     grid-template-columns: 1fr;
     gap: 40px;
   
   }
  }
- .experiência .subtitulo {
+ .sobre-mim .subtitulo {
   color: #525252
 }
 

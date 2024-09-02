@@ -1,0 +1,54 @@
+.portfolio {
+  padding: 30px 0;
+  background-color: black;
+}
+
+.interface {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.titulo span {
+  color: rgb(101, 219, 10); 
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.img-port {
+  width: 30%;
+  height: 200px; 
+    background-image: url(../img/em-breve.png);
+  margin-bottom: 0;
+  background-size: contain; /* Faz a imagem caber no container sem cortar */
+  background-position: center; /* Centraliza a imagem no container */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  border: 2px solid #a3a3a3; /* Optei pela borda branca para criar contraste */
+  animation: blink 1s infinite; /* Duração de 1 segundo, repetição infinita */
+}
+
+.img-port:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transform: scale(1.1); /* Aumenta 10% ao passar o mouse */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

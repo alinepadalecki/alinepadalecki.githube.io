@@ -3,45 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lobo - Desenvolvedora e Designer</title>
+  <title>Desenvolvedora e Designer</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/introdução.css">
-  <link rel="stylesheet" href="./css/experiência.css">
+  <link rel="stylesheet" href="./css/sobre-mim.css">
   <link rel="stylesheet" href="./css/formação.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
   
 
 </head>
 <body>
   <header class="header">
-    <img src="./img/marca.svg" alt="lobo">
+  <h1>Portfólio</h1>
     <nav>
       <ul class="header-menu">
-        <li><a href="#experiência">Experiência</a></li>
-        <li><a href="#formação">Formação</a></li>
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#formaçao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
   <main class="introdução">
-    <img src="./img/perfil.jpg" alt="Lobo Cinza" width="360px" height="520px">
+    <img src="./img/perfil.jpg" alt="Foto de Perfil" width="250px" height="220px">
     <div>
       <h1>Desenvolvedora<br> Front End & <br>UX/UI Designer</h1>
-      <p>Localizada no Pará</p>
+      
     </div>
 
   </main>
 
-  <section class="experiência" id="experiência" aria-label="Experiência">
+  <section class="sobre-mim" id="sobre-mim" aria-label="Sobre Mim">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiência-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+      <p class="sobre-mim-texto">Desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.<br> Um dos meus hobbies é a leitura, apesar de ter Stephen King e Neil Gaiman como autores favoritos, não tenho preferência por nenhum genêro em específico.</p>
 
       <div class="empresa">
       <span class="empresa-ano">2023</span>
-      <h3 class="empresa-titulo">Bikcraft</h3>
+      <h3 class="empresa-titulo">CLT Papelária</h3>
       <span class="empresa-titulo">Desenvolvedora Júnior</span>
       <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria de Design</p>
       <ul class="empresa-habilidades">
@@ -72,7 +74,7 @@
       <span class="empresa-ano">2020</span>
       <h3 class="empresa-titulo">B7web</h3>
       <span class="empresa-titulo">Estagiária</span>
-      <p class="empresa-texto">B7web é uma escola de programção a qual pude realizar alguns projetos e trabalhar no desenvolvimento completo de sites</p>
+      <p class="empresa-texto">B7web é uma escola de programção na qual pude realizar alguns projetos e trabalhar no desenvolvimento completo de sites</p>
       <ul class="empresa-habilidades">
         <li>HTML</li>
         <li>CSS</li>
@@ -91,7 +93,7 @@
 
       <div>
         <p class="formaçao-texto">
-          Minha mais recente experiencia academica foi o <strong>mestrado</strong> que fiz no exterior em <strong>UX Design</strong>.Além disso me mantenho sempre atualizado com cursos intensivos online.
+          Minha mais recente experiencia academica foi o <strong>Bootcamp</strong> que fiz de Web Development e <strong>UX Design</strong>. Além disso, me mantenho sempre atualizada com cursos intensivos online.
 
         </p>
 
@@ -131,6 +133,17 @@
     </ul>
   </div>
 </div>
+<!-- Nova seção de portfólio -->
+<section class="portfolio" id="portfolio">
+  <div class="interface">
+    <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+    <div class="flex">
+      <div class="img-port"></div>
+      <div class="img-port"></div>
+      <div class="img-port"></div>
+    </div>
+  </div>
+</section>
 
       </div>
 
@@ -140,13 +153,27 @@
 
   <footer class="footer" id="contato">
     <div class="footer-container">
-      <p class="footer-texto">Estou disponivel para novos projetos no momento. Entre em contato comigo e agendamos um horário!<p>
-        <ul class="footer-contato">
-          <li>alin3lope5@gmail.com</li>
-          <li>+55 (93) 99999-9999</li>
-          <li><a href="https://www.instagram.com/alinepadaleckii"></a></li>
-        </ul>
-        <p class="footer-copy">Lobo. Alguns direitos reservados</p>
+      <p class="footer-texto">Estou disponivel para novos projetos no momento. Entre em contato e agendaremos um horário!<p>
+        <div class="contact-form-container">
+          <h1>Formulário de Contato</h1>
+          <form action="#" method="post" class="contact-form">
+              <div class="form-group">
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Mensagem:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+          </form>
+      </div>
+          
+        <p class="footer-copy">Direitos reservados</p>
     </div>
   </footer>
 </body>
